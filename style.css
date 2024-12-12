@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* NAvbar styling start */
@@ -1724,6 +1725,13 @@
         margin-bottom: 20px;
     }
 
+    .skills .skills-content .left p{
+        width: 100%;
+        padding: 0 20px; /* Match padding with about section */
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
+        text-align: justify;
+    }
+
     .skills .skills-content .left .text {
         font-size: 18px;
     }
@@ -1784,6 +1792,13 @@
         width: 100%;
     }
 
+    .skills .skills-content .left p{
+        width: 100%;
+        padding: 0 20px; /* Match padding with about section */
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
+        text-align: justify;
+    }
+
     .skills .skills-content .left .text {
         font-size: 16px;
     }
@@ -1838,6 +1853,13 @@
     .skills .skills-content .column {
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .skills .skills-content .left p{
+        width: 100%;
+        padding: 0 20px; /* Match padding with about section */
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
+        text-align: justify;
     }
 
     .skills .skills-content .left .text {
