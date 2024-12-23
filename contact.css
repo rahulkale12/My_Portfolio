@@ -119,6 +119,7 @@
     width: 100%;
     font-family: "Poppins",sans-serif;
     padding: 80px 20px;
+    overflow: hidden;
 }
 
 .contact .title{
@@ -128,6 +129,7 @@
     text-align: center;
     padding: 60px;
     text-decoration: underline;
+    overflow: hidden;
 }
 
 .contact .max-width{
@@ -141,6 +143,7 @@
     gap: 50px;
     margin: 0 auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .contact .contact-content .column-left{

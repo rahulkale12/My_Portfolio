@@ -243,6 +243,7 @@
 /* About section start */
 .about{
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .about .about-content{
@@ -251,6 +252,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 80px;
+    overflow: hidden;
     
 }
 
@@ -350,6 +352,7 @@
     justify-content: center;
     align-items: center;
     padding: 80px 10px;
+    overflow: hidden;
     
 }
 
@@ -927,6 +930,7 @@
     text-align: center;
     padding-bottom: 20px;
     text-decoration: underline;
+    
 }
 
 .contact{
@@ -941,6 +945,7 @@
     justify-content: center;
     align-items: center;
     font-family: "Poppins",sans-serif;
+    overflow-y: hidden;
     
 }
 
@@ -960,6 +965,7 @@
    
     font-size: 40px;
     line-height: 1.2;
+    overflow: hidden;
 }
 
 .contact-content p{
@@ -968,6 +974,7 @@
     font-size: 22px;
     text-align: justify;
     word-spacing: .5px;
+    overflow: hidden;
 }
 
 
@@ -982,10 +989,15 @@
     
    
 }
+.contact .btn{
+    overflow: hidden;
+}
 
 .contact .btn a{
     background-color: crimson;
-    padding: 20px;
+    display: flex;
+    padding: 10px ;
+    width: 160px;
     border-radius: 6px;
     text-decoration: none;
     text-align: center;
@@ -994,11 +1006,16 @@
     text-transform: capitalize;
     box-sizing: border-box;
     overflow: hidden;
+    
+
 } 
 
 .contact .fa-solid{
     color: #fff;
-    padding: 10px;
+    padding: 5px 10px;
+    overflow: hidden;
+
+
 }
 
 
@@ -1324,112 +1341,112 @@
 
     .about .about-content .column-left,
     .about .about-content .column-right {
-        width: 100%; /* Make both columns take full width */
-        text-align: center; /* Center text for both columns */
+        width: 100%; 
+        text-align: center; 
     }
 
     .about .about-content .column-left img {
-        width: 500px; /* Adjust image width for medium screens */
+        width: 500px; 
         height: 500px;
     }
 
     .about .about-content .column-right {
-        margin-top: 30px; /* Space out content vertically */
+        margin-top: 30px; 
         padding: 0 20px;
     }
 
     .about .title {
-        font-size: 38px; /* Reduce title size for medium screens */
+        font-size: 38px; 
     }
 
     .about .about-content .column-right .text {
-        font-size: 22px; /* Adjust font size for the text */
+        font-size: 22px; 
     }
 
     .about .about-content .column-right a {
-        font-size: 18px; /* Reduce button font size */
-        padding: 8px 16px; /* Adjust button padding */
+        font-size: 18px; 
+        padding: 8px 16px; 
     }
 }
 
 /* For medium screens (max-width: 1200px) */
 @media (max-width: 1210px) {
     .about .about-content {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
     }
 
     .about .about-content .column-left,
     .about .about-content .column-right {
-        width: 100%; /* Make both columns take full width */
-        text-align: center; /* Center text for both columns */
+        width: 100%; 
+        text-align: center; 
     }
 
     .about .about-content .column-left img {
-        width: 450px; /* Further reduce image size */
+        width: 450px; 
         height: 450px;
     }
 
     .about .about-content .column-right {
         width: 100%;
-        margin-top: 20px; /* Add margin for spacing */
+        margin-top: 20px; 
     }
 
     .about .title {
-        font-size: 32px; /* Slightly smaller title size */
+        font-size: 32px; 
     }
 
     .about .about-content .column-right .text {
-        font-size: 20px; /* Adjust font size */
+        font-size: 20px; 
     }
 
     .about .about-content .column-right a {
-        font-size: 16px; /* Reduce button font size */
-        padding: 8px 14px; /* Adjust padding */
+        font-size: 16px; 
+        padding: 8px 14px; 
     }
 }
 
 /* For smaller screens (max-width: 947px) */
 @media (max-width: 947px) {
     .about .about-content {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .about .about-content .column-left img {
-        width: 350px; /* Smaller image size */
+        width: 350px; 
         height: 350px;
     }
 
     .about .about-content .column-right {
         width: 100%;
-        margin-top: 20px; /* Add space between columns */
+        margin-top: 20px; 
     }
 
     .about .title {
-        font-size: 28px; /* Smaller title font */
+        font-size: 28px; 
     }
 
     .about .about-content .column-right .text {
-        font-size: 18px; /* Adjust text size */
+        font-size: 18px; 
     }
 
     .about .about-content .column-right a {
-        font-size: 15px; /* Smaller button font size */
-        padding: 8px 12px; /* Adjust button padding */
+        font-size: 15px; 
+        padding: 8px 12px; 
     }
 }
 
 /* For very small screens (max-width: 810px) */
 @media (max-width: 810px) {
     .about .about-content {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .about .about-content .column-left img {
-        width: 300px; /* Even smaller image for mobile */
+        width: 300px; 
         height: 300px;
     }
 
@@ -1440,28 +1457,28 @@
     }
 
     .about .title {
-        font-size: 24px; /* Further reduce title font size */
+        font-size: 24px; 
     }
 
     .about .about-content .column-right .text {
-        font-size: 16px; /* Adjust text size for small screens */
+        font-size: 16px; 
     }
 
     .about .about-content .column-right a {
-        font-size: 14px; /* Smaller button font size */
-        padding: 6px 10px; /* Adjust padding */
+        font-size: 14px; 
+        padding: 6px 10px; 
     }
 }
 
 /* For very small screens (max-width: 480px) */
 @media (max-width: 480px) {
     .about .about-content {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .about .about-content .column-left img {
-        width: 250px; /* Minimized image for very small screens */
+        width: 250px; 
         height: 250px;
     }
 
@@ -1471,16 +1488,16 @@
     }
 
     .about .title {
-        font-size: 22px; /* Significantly smaller font for mobile */
+        font-size: 22px; 
     }
 
     .about .about-content .column-right .text {
-        font-size: 14px; /* Further reduced text size */
+        font-size: 14px; 
     }
 
     .about .about-content .column-right a {
-        font-size: 12px; /* Smaller button text */
-        padding: 6px 8px; /* Less padding for small buttons */
+        font-size: 12px; 
+        padding: 6px 8px; 
     }
 }
 
